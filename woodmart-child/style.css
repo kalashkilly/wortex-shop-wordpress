@@ -1,0 +1,21 @@
+/*
+ Theme Name:   Woodmart Child
+ Description:  Woodmart Child Theme
+ Author:       XTemos
+ Author URI:   http://xtemos.com
+ Template:     woodmart
+ Version:      1.0.0
+ Text Domain:  woodmart
+*/
+
+
+
+/* --- Custom override pre search form --- */
+[class*="wd-header-search-form"] {
+  flex: 0 0 auto !important;
+}
+
+[class*="wd-header-search-form"] input[type='text'] {
+  min-width: unset !important;
+  max-width: 200px !important;
+}
