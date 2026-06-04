@@ -3,6 +3,183 @@
  * Custom staging-first design overrides for WoodMart Child.
  */
 
+/* -------------------------------------------------------------------------- */
+/* Product grid shell                                                         */
+/* -------------------------------------------------------------------------- */
+
+.wd-products .product-grid-item,
+.wd-products .wd-product,
+.woocommerce ul.products .product-grid-item,
+.woocommerce ul.products .wd-product {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 136, 0.18);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, rgba(10, 16, 14, 0.88) 0%, rgba(5, 10, 8, 0.82) 100%);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+  will-change: transform;
+}
+
+.wd-products .product-grid-item .product-wrapper,
+.wd-products .wd-product .product-wrapper,
+.woocommerce ul.products .product-grid-item .product-wrapper,
+.woocommerce ul.products .wd-product .product-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.wd-products .product-grid-item::before,
+.wd-products .wd-product::before,
+.woocommerce ul.products .product-grid-item::before,
+.woocommerce ul.products .wd-product::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(0, 255, 136, 0.08), transparent 35%),
+    radial-gradient(circle at top right, rgba(0, 255, 136, 0.08), transparent 42%);
+  opacity: 0.55;
+  transition: opacity 180ms ease;
+}
+
+.wd-products .product-grid-item:hover,
+.wd-products .wd-product:hover,
+.woocommerce ul.products .product-grid-item:hover,
+.woocommerce ul.products .wd-product:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 255, 136, 0.42);
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.36),
+    0 0 0 1px rgba(0, 255, 136, 0.12),
+    0 0 24px rgba(0, 255, 136, 0.12);
+}
+
+.wd-products .product-grid-item:hover::before,
+.wd-products .wd-product:hover::before,
+.woocommerce ul.products .product-grid-item:hover::before,
+.woocommerce ul.products .wd-product:hover::before {
+  opacity: 0.9;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Product title and price                                                    */
+/* -------------------------------------------------------------------------- */
+
+.wd-products .product-grid-item .woocommerce-loop-product__title,
+.wd-products .wd-product .woocommerce-loop-product__title,
+.woocommerce ul.products .product-grid-item .woocommerce-loop-product__title,
+.woocommerce ul.products .wd-product .woocommerce-loop-product__title {
+  color: #e6f8ef;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.wd-products .product-grid-item .woocommerce-loop-product__title:hover,
+.wd-products .wd-product .woocommerce-loop-product__title:hover,
+.woocommerce ul.products .product-grid-item .woocommerce-loop-product__title:hover,
+.woocommerce ul.products .wd-product .woocommerce-loop-product__title:hover {
+  color: #9effbf;
+}
+
+.wd-products .product-grid-item .price,
+.wd-products .wd-product .price,
+.woocommerce ul.products .product-grid-item .price,
+.woocommerce ul.products .wd-product .price {
+  color: #72ff9f;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.wd-products .product-grid-item .price del,
+.wd-products .wd-product .price del,
+.woocommerce ul.products .product-grid-item .price del,
+.woocommerce ul.products .wd-product .price del {
+  color: rgba(153, 194, 170, 0.68);
+}
+
+.wd-products .product-grid-item .price ins,
+.wd-products .wd-product .price ins,
+.woocommerce ul.products .product-grid-item .price ins,
+.woocommerce ul.products .wd-product .price ins {
+  color: #9dffbf;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Add to cart and action buttons                                             */
+/* -------------------------------------------------------------------------- */
+
+.wd-products .product-grid-item .wd-add-btn,
+.wd-products .product-grid-item .add_to_cart_button,
+.wd-products .wd-product .wd-add-btn,
+.wd-products .wd-product .add_to_cart_button,
+.woocommerce ul.products .product-grid-item .wd-add-btn,
+.woocommerce ul.products .product-grid-item .add_to_cart_button,
+.woocommerce ul.products .wd-product .wd-add-btn,
+.woocommerce ul.products .wd-product .add_to_cart_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(0, 255, 136, 0.28);
+  border-radius: 999px;
+  background: rgba(4, 18, 12, 0.72);
+  color: #b8ffd0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease;
+}
+
+.wd-products .product-grid-item .wd-add-btn:hover,
+.wd-products .product-grid-item .add_to_cart_button:hover,
+.wd-products .wd-product .wd-add-btn:hover,
+.wd-products .wd-product .add_to_cart_button:hover,
+.woocommerce ul.products .product-grid-item .wd-add-btn:hover,
+.woocommerce ul.products .product-grid-item .add_to_cart_button:hover,
+.woocommerce ul.products .wd-product .wd-add-btn:hover,
+.woocommerce ul.products .wd-product .add_to_cart_button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0, 255, 136, 0.56);
+  background: rgba(0, 255, 136, 0.1);
+  color: #effff5;
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 136, 0.12),
+    0 0 18px rgba(0, 255, 136, 0.16);
+}
+
+.wd-products .product-grid-item .wd-add-btn:focus-visible,
+.wd-products .product-grid-item .add_to_cart_button:focus-visible,
+.wd-products .wd-product .wd-add-btn:focus-visible,
+.wd-products .wd-product .add_to_cart_button:focus-visible,
+.woocommerce ul.products .product-grid-item .wd-add-btn:focus-visible,
+.woocommerce ul.products .product-grid-item .add_to_cart_button:focus-visible,
+.woocommerce ul.products .wd-product .wd-add-btn:focus-visible,
+.woocommerce ul.products .wd-product .add_to_cart_button:focus-visible {
+  outline: 2px solid rgba(0, 255, 136, 0.75);
+  outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Debug only                                                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Keep this block disabled unless actively inspecting the design layer.
 .wortex-design-test,
 .wortex-design-test * {
   outline: 6px solid #00ff88 !important;
@@ -10,3 +187,4 @@
   background: rgba(0, 255, 136, 0.16) !important;
   box-shadow: 0 0 30px rgba(0, 255, 136, 0.65) !important;
 }
+*/
