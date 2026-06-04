@@ -8,7 +8,15 @@
  Text Domain:  woodmart
 */
 
-/* --- Custom override pre search form --- */
+/*
+ * Base child theme stylesheet.
+ *
+ * Keep this file minimal.
+ * Main custom design work should go into:
+ * assets/css/wortex-design.css
+ */
+
+/* --- Custom override for WoodMart header search form --- */
 [class*="wd-header-search-form"] {
   flex: 0 0 auto !important;
 }
@@ -17,20 +25,3 @@
   min-width: unset !important;
   max-width: 200px !important;
 }
-
-/* --- Wortex AI workflow test --- */
-.wortex-ai-test {
-  outline: 6px solid #00ff88 !important;
-  outline-offset: 6px !important;
-  background: rgba(0, 255, 136, 0.12) !important;
-  box-shadow: 0 0 24px rgba(0, 255, 136, 0.55) !important;
-}
-
-/* Extra visible test for selected Elementor title */
-.wortex-ai-test * {
-  outline-color: #00ff88 !important;
-}
-
-/* Wortex staging test: child theme connected to GitHub */
-/* Wortex GitHub pull test */
-
