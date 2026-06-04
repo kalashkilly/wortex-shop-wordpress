@@ -8,8 +8,6 @@
  Text Domain:  woodmart
 */
 
-
-
 /* --- Custom override pre search form --- */
 [class*="wd-header-search-form"] {
   flex: 0 0 auto !important;
@@ -19,8 +17,18 @@
   min-width: unset !important;
   max-width: 200px !important;
 }
-/* Wortex AI workflow test */
+
+/* --- Wortex AI workflow test --- */
 .wortex-ai-test {
-  outline: 2px solid #00ff88;
+  outline: 6px solid #00ff88 !important;
+  outline-offset: 6px !important;
+  background: rgba(0, 255, 136, 0.12) !important;
+  box-shadow: 0 0 24px rgba(0, 255, 136, 0.55) !important;
 }
+
+/* Extra visible test for selected Elementor title */
+.wortex-ai-test * {
+  outline-color: #00ff88 !important;
+}
+
 /* Wortex staging test: child theme connected to GitHub */
