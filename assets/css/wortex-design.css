@@ -176,6 +176,127 @@
 }
 
 /* -------------------------------------------------------------------------- */
+/* Footer alignment                                                           */
+/* -------------------------------------------------------------------------- */
+
+footer,
+.site-footer,
+.wd-footer,
+.footer-container,
+.elementor-location-footer {
+  background-color: #000 !important;
+  background: #000 !important;
+}
+
+footer > *,
+.site-footer > *,
+.wd-footer > *,
+.footer-container > *,
+.elementor-location-footer > * {
+  background-color: #000 !important;
+}
+
+footer .elementor-section,
+.site-footer .elementor-section,
+.wd-footer .elementor-section,
+.footer-container .elementor-section,
+.elementor-location-footer .elementor-section,
+footer .elementor-container,
+.site-footer .elementor-container,
+.wd-footer .elementor-container,
+.footer-container .elementor-container,
+.elementor-location-footer .elementor-container,
+footer .elementor-column,
+.site-footer .elementor-column,
+.wd-footer .elementor-column,
+.footer-container .elementor-column,
+.elementor-location-footer .elementor-column,
+footer .elementor-widget-wrap,
+.site-footer .elementor-widget-wrap,
+.wd-footer .elementor-widget-wrap,
+.footer-container .elementor-widget-wrap,
+.elementor-location-footer .elementor-widget-wrap {
+  background-color: transparent !important;
+}
+
+footer,
+.site-footer,
+.wd-footer,
+.footer-container,
+.elementor-location-footer,
+footer .elementor-section,
+.site-footer .elementor-section,
+.wd-footer .elementor-section,
+.footer-container .elementor-section,
+.elementor-location-footer .elementor-section {
+  overflow-x: hidden;
+}
+
+footer .elementor-location-footer,
+.site-footer .elementor-location-footer,
+.wd-footer .elementor-location-footer,
+.footer-container .elementor-location-footer,
+.elementor-location-footer {
+  width: 100%;
+}
+
+footer .elementor-location-footer .elementor-container,
+.site-footer .elementor-location-footer .elementor-container,
+.wd-footer .elementor-location-footer .elementor-container,
+.footer-container .elementor-location-footer .elementor-container,
+.elementor-location-footer .elementor-container {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .elementor-location-footer .elementor-column,
+.site-footer .elementor-location-footer .elementor-column,
+.wd-footer .elementor-location-footer .elementor-column,
+.footer-container .elementor-location-footer .elementor-column,
+.elementor-location-footer .elementor-column {
+  display: flex;
+  justify-content: center;
+}
+
+footer .elementor-location-footer .elementor-widget-wrap,
+.site-footer .elementor-location-footer .elementor-widget-wrap,
+.wd-footer .elementor-location-footer .elementor-widget-wrap,
+.footer-container .elementor-location-footer .elementor-widget-wrap,
+.elementor-location-footer .elementor-widget-wrap {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .elementor-location-footer .elementor-heading-title,
+.site-footer .elementor-location-footer .elementor-heading-title,
+.wd-footer .elementor-location-footer .elementor-heading-title,
+.footer-container .elementor-location-footer .elementor-heading-title,
+.elementor-location-footer .elementor-heading-title {
+  text-align: center;
+}
+
+footer .elementor-location-footer .elementor-column .elementor-widget-wrap > *,
+.site-footer .elementor-location-footer .elementor-column .elementor-widget-wrap > *,
+.wd-footer .elementor-location-footer .elementor-column .elementor-widget-wrap > *,
+.footer-container .elementor-location-footer .elementor-column .elementor-widget-wrap > *,
+.elementor-location-footer .elementor-column .elementor-widget-wrap > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .elementor-location-footer,
+.site-footer .elementor-location-footer,
+.wd-footer .elementor-location-footer,
+.footer-container .elementor-location-footer,
+.elementor-location-footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* -------------------------------------------------------------------------- */
 /* Debug only                                                                 */
 /* -------------------------------------------------------------------------- */
 
