@@ -32,6 +32,21 @@ add_action( 'template_redirect', function() {
     wp_redirect( $target_url, 302 );
     exit;
 });
+/**
+ * Enqueue Wortex custom design layer.
+ */
+add_action( 'wp_enqueue_scripts', function () {
+    $file = get_stylesheet_directory() . '/assets/css/wortex-design.css';
+
+    if ( file_exists( $file ) ) {
+        wp_enqueue_style(
+            'wortex-design',
+            get_stylesheet_directory_uri() . '/assets/css/wortex-design.css',
+            array(),
+            filemtime( $file )
+        );
+    }
+}, 99 );
 
 
 
