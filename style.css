@@ -33,3 +33,6 @@
 
 /* Wortex staging test: child theme connected to GitHub */
 /* Wortex GitHub pull test */
+body {
+  outline: 12px solid red !important;
+}
