@@ -4,8 +4,10 @@
  */
 
 /* Test: confirms wortex-design.css is loaded */
-.wortex-design-test {
-  outline: 4px solid #00ff88 !important;
+.wortex-design-test,
+.wortex-design-test * {
+  outline: 6px solid #00ff88 !important;
   outline-offset: 6px !important;
-  background: rgba(0, 255, 136, 0.08) !important;
+  background: rgba(0, 255, 136, 0.16) !important;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.65) !important;
 }
