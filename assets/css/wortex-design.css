@@ -1,0 +1,11 @@
+/*
+ * Wortex Design Layer
+ * Custom staging-first design overrides for WoodMart Child.
+ */
+
+/* Test: confirms wortex-design.css is loaded */
+.wortex-design-test {
+  outline: 4px solid #00ff88 !important;
+  outline-offset: 6px !important;
+  background: rgba(0, 255, 136, 0.08) !important;
+}
