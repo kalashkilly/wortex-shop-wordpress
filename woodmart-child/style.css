@@ -19,4 +19,8 @@
   min-width: unset !important;
   max-width: 200px !important;
 }
+/* Wortex AI workflow test */
+.wortex-ai-test {
+  outline: 2px solid #00ff88;
+}
 /* Wortex staging test: child theme connected to GitHub */
